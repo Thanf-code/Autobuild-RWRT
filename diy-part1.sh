@@ -19,4 +19,4 @@
 
 #sed -i '$a src-git helloworld https://github.com/P3TERX/helloworld' feeds.conf.default
 
-#sed -i '$a src-git diy https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
+sed -i '$a src-git Thanf https://github.com/Thanf-code/op-packages.git' feeds.conf.default
