@@ -19,3 +19,4 @@
 
 #sed -i '$a src-git helloworld https://github.com/P3TERX/helloworld' feeds.conf.default
 
+sed -i '$a src-git package https://github.com/Thanf-code/op-packages' feeds.conf.default
