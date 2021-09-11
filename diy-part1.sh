@@ -23,4 +23,4 @@
 
 #sed -i '$a src-git package https://github.com/Thanf-code/op-packages' feeds.conf.default
 
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall > /dev/null 2>&1
+svn co https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall > /dev/null 2>&1
