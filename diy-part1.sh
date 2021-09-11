@@ -26,3 +26,7 @@
 #svn co https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall > /dev/null 2>&1
 
 svn co https://github.com/Thanf-code/luci-app-bypass package/luci-app-bypass > /dev/null 2>&1
+
+svn co https://github.com/Thanf-code/OpenAppFilter package/luci-app-oaf > /dev/null 2>&1
+
+svn co https://github.com/Thanf-code/iptvhelper package/luci-app-iptvhelper > /dev/null 2>&1
