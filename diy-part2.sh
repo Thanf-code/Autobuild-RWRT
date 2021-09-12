@@ -9,7 +9,7 @@
 #============================================================
 
 # Modify default IP
-# sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # Modify hostname
 # sed -i 's/OpenWrt/Newifi-D2/g' package/base-files/files/bin/config_generate
@@ -19,6 +19,9 @@
 
 # Modify default theme
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+
+ # 设置密码为空
+sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ                                                            
 
 # Add kernel build user
 [ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
