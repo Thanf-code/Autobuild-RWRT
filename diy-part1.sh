@@ -13,7 +13,7 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #sed -i 's@coolsnowwolf/packages@P3TERX/packages@' feeds.conf.default
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-#sed -i '$a src-git small-package https://github.com/Thanf-code/small-package' feeds.conf.default
+sed -i '$a src-git small-package https://github.com/Thanf-code/small-package' feeds.conf.default
 svn co https://github.com/Thanf-code/OpenAppFilter package/luci-app-oaf > /dev/null 2>&1
 svn co https://github.com/Thanf-code/iptvhelper package/luci-app-iptvhelper > /dev/null 2>&1
 #git clone https://github.com/Hyy2001X/luci-app-autoupdate.git package/luci-app-autoupdate
