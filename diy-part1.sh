@@ -18,4 +18,4 @@ svn co https://github.com/Thanf-code/OpenAppFilter package/luci-app-oaf > /dev/n
 svn co https://github.com/Thanf-code/iptvhelper package/luci-app-iptvhelper > /dev/null 2>&1
 #git clone https://github.com/Hyy2001X/luci-app-autoupdate.git package/luci-app-autoupdate
 #git clone https://github.com/Thanf-code/op-packages/tree/main/luci-app-control-webrestriction.git package/luci-app-control-webrestriction
-git clone https://github.com/Thanf-code/luci-app-control-weburl.git package/luci-app-control-weburl
+git clone https://github.com/Thanf-code/luci-app-control-weburl.git packages/luci-app-control-weburl
