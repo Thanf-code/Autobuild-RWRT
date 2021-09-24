@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build op
+name: Build iienol
 
 env:
   REPO_URL: https://github.com/Thanf-code/lienol
