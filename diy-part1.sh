@@ -20,4 +20,4 @@ svn co https://github.com/Thanf-code/iptvhelper package/iptvhelper > /dev/null 2
 #git clone https://github.com/Thanf-code/op-package/tree/main/luci-app-control-webrestriction.git package/luci-app-control-webrestriction
 git clone https://github.com/Thanf-code/luci-app-control-weburl.git package/luci-app-control-weburl
 git clone -b https://github.com/Thanf-code/luci-app-omcproxy.git package/luci-app-omcproxy
-git clone -b 19.07 https://github.com/Thanf-code/small-package.git
+git clone -b 19.07 https://github.com/Thanf-code/small-package.git package/small
