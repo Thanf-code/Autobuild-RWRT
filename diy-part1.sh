@@ -13,7 +13,7 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #sed -i 's@coolsnowwolf/packages@P3TERX/packages@' feeds.conf.default
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-#sed -i '$a src-git small https://github.com/Thanf-code/small-package' feeds.conf.default
+sed -i '$a src-git small https://github.com/Thanf-code/small-package' feeds.conf.default
 svn co https://github.com/Thanf-code/OpenAppFilter package/OpenAppFilter > /dev/null 2>&1
 svn co https://github.com/Thanf-code/iptvhelper package/iptvhelper > /dev/null 2>&1
 #git clone https://github.com/Hyy2001X/luci-app-autoupdate.git package/luci-app-autoupdate
@@ -21,4 +21,3 @@ svn co https://github.com/Thanf-code/iptvhelper package/iptvhelper > /dev/null 2
 git clone https://github.com/Thanf-code/luci-app-control-weburl.git package/luci-app-control-weburl
 git clone https://github.com/Thanf-code/luci-app-omcproxy.git package/luci-app-omcproxy
 #git clone -b 19.07 https://github.com/Thanf-code/small-package.git package/small
-git clone https://github.com/kenzok8/small-package.git package/small
