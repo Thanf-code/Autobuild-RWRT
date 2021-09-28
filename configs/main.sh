@@ -79,4 +79,4 @@ CONFIG_PACKAGE_htop=y
 CONFIG_PACKAGE_xray-geodata=y
 CONFIG_PACKAGE_xz=y
 CONFIG_PACKAGE_xz-utils=y
-
+# CONFIG_PACKAGE_dnsmasq is not set
