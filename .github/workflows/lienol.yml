@@ -14,7 +14,7 @@ env:
   REPO_URL: https://github.com/Thanf-code/Lienol
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: congfigs/lean.config
+  CONFIG_FILE: configs/lean.config
   DIY_P1_SH: diy-part1/lienol.sh
   DIY_P2_SH: diy-part2/lienol.sh
   UPLOAD_BIN_DIR: true
