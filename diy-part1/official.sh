@@ -18,4 +18,4 @@
 #svn co https://github.com/Thanf-code/iptvhelper package/iptvhelper > /dev/null 2>&1
 #git clone https://github.com/Hyy2001X/luci-app-autoupdate.git package/luci-app-autoupdate
 git clone https://github.com/Thanf-code/luci-app-control-weburl.git package/luci-app-control-weburl
-sed -i '$a src-git small5 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small5 https://github.com/Thanf-code/op-packages' feeds.conf.default
