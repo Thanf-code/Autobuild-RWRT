@@ -17,6 +17,7 @@ env:
   CONFIG_FILE: configs/lean.config
   DIY_P1_SH: diy-part1/lean.sh
   DIY_P2_SH: diy-part2/lean.sh
+  UPLOAD_CONFIG: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
