@@ -110,6 +110,11 @@ jobs:
           echo "TARGET_PROFILE=armvirt" >> $GITHUB_ENV
         fi
         
+    - name: 编译信息
+      run: |
+        cd openwrt
+        ./scripts/diffconfig.sh > config.txt
+        
     - name: 上传.config配置文件在 github actions
       uses: actions/upload-artifact@v2
       if: env.UPLOAD_CONFIG == 'true'
