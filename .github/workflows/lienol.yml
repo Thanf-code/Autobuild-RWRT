@@ -12,7 +12,7 @@ name: Build lienol
 
 env:
   REPO_URL: https://github.com/Thanf-code/lienol
-  REPO_BRANCH: master
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/lean.config
   DIY_P1_SH: diy-part1/lienol.sh
