@@ -8,15 +8,15 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build lean
+name: Build lienol
 
 env:
-  REPO_URL: https://github.com/Thanf-code/lean
+  REPO_URL: https://github.com/Thanf-code/lienol
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/lean.config
-  DIY_P1_SH: diy-part1/lean.sh
-  DIY_P2_SH: diy-part2/lean.sh
+  DIY_P1_SH: diy-part1/lienol.sh
+  DIY_P2_SH: diy-part2/lienol.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
