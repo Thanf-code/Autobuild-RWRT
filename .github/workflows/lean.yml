@@ -86,7 +86,12 @@ jobs:
       env:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-
+    - name: Deliver buildinfo
+      uses: actions/upload-artifact@v2
+      with:
+        name: OpenWrt_buildinfo
+        path: ./artifact/buildinfo/
+        
     - name: Download package
       id: package
       run: |
