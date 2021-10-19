@@ -88,7 +88,17 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
     
-
+    - name: Prepare artifact
+      run: |
+        mkdir -p ./artifact/buildinfo
+        cp -rf $(find ./bin/targets/ -type f -name "*.buildinfo" -o -name "*.manifest") ./artifact/buildinfo/
+    
+    - name: Deliver buildinfo
+      uses: actions/upload-artifact@v2
+      with:
+        name: OpenWrt_buildinfo
+        path: ./artifact/buildinfo/
+    
         
     - name: Download package
       id: package
@@ -109,21 +119,6 @@ jobs:
         [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
         echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
     
-    - name: Prepare artifact
-      run: |
-        mkdir -p ./artifact/firmware
-        mkdir -p ./artifact/package
-        mkdir -p ./artifact/buildinfo
-        rm -rf $(find ./bin/targets/ -type d -name "packages")
-        cp -rf $(find ./bin/targets/ -type f) ./artifact/firmware/
-        cp -rf $(find ./bin/packages/ -type f -name "*.ipk") ./artifact/package/
-        cp -rf $(find ./bin/targets/ -type f -name "*.buildinfo" -o -name "*.manifest") ./artifact/buildinfo/
-    
-    - name: Deliver buildinfo
-      uses: actions/upload-artifact@v2
-      with:
-        name: OpenWrt_buildinfo
-        path: ./artifact/buildinfo/
         
     - name: Check space usage
       if: (!cancelled())
