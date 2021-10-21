@@ -23,8 +23,8 @@ sed -i "s/OpenWrt /Thanf build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" packag
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
-# x86机型,默认内核5.4，修改内核为5.10
-#sed -i 's/PATCHVER:=5.4/PATCHVER:=5.10/g' target/linux/x86/Makefile                               
+# ramips机型,默认内核5.4，修改内核为5.10
+#sed -i 's/PATCHVER:=5.4/PATCHVER:=5.10/g' target/linux/ramips/Makefile                               
 
 # 修改bypass支持lean源码shadowsocksr-libev-ssr-redir/server重命名
 #find package/*/ feeds/*/ -maxdepth 5 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
