@@ -20,7 +20,8 @@ REPO_URL: https://github.com/Thanf-code/lean
   TZ: Asia/Shanghai
 
 on:
-  workflow_dispatch:
+ repository_dispatch:
+ workflow_dispatch:
     inputs:
       config:
         description: 'true-actions改成true,再按Run workflow启动'
