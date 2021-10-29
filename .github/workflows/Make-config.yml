@@ -1,7 +1,7 @@
 
 #
 
-name: 配置.config文件
+name: make-config
 
 env: 
 REPO_URL: https://github.com/Thanf-code/lean
