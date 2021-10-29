@@ -51,8 +51,7 @@ jobs:
     
     - name: Clone source code
       working-directory: /workdir
-      run: |
-        df -hT $PWD
+      run: |       
         git clone $REPO_URL -b $REPO_BRANCH openwrt > /dev/null 2>&1
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd $GITHUB_WORKSPACE/openwrt
