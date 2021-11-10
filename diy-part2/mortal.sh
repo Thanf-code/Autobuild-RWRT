@@ -23,6 +23,9 @@ sed -i "s/ImmortalWrt /Thanf build $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt /g
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/emortal/default-settings/files/zzz-default-settings
 
+# 换源
+# sed -i 's,downloads.openwrt.org,mirrors.tencent.com/lede,g' /etc/opkg/distfeeds.conf
+
 # Add kernel build user
 [ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
     echo 'CONFIG_KERNEL_BUILD_USER="Thanf"' >>.config ||
