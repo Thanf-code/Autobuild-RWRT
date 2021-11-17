@@ -8,10 +8,10 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build mortal-master
+name: Build mortal
 
 env:
-  REPO_URL: https://github.com/Thanf-code/immortalwrt
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/mortal/master.config
@@ -136,7 +136,7 @@ jobs:
     
     - name: Upload firmware directory
       uses: actions/upload-artifact@main
-      if: steps.organize.outputs.status == 'success' && !cancelled()
+      #if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: OpenWrt_mortal${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
