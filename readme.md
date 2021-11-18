@@ -22,6 +22,6 @@ ssh进去配置app会被取消而且没有config文件生成，解决方法如�
 
 4-此时就会有config文件生成了
 
-5-将生成的config文件覆盖到原config里
+5-将生成的config文件去掉添加的错误插件覆盖到原config里
 
 6-再次不进入ssh编译
