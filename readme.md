@@ -10,3 +10,12 @@ Auto build OpenWrt firmware for Newifi D2 via GitHub Actions
 The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
 
 出现这样情况很有可能是连接SSH进去配置过固件的原因，如果有这情况出现，停了编译后也会有一份配置文件的，你下载配置文件，然后把内容覆盖到你编译的对应源码的.config里面，不要进SSH再次编译试试
+
+
+ssh进去配置app会被取消而且没有config文件生成；
+1-可以找一个错误代码添加到diy1里面，
+2-并在config里选中改错误插件，
+3-ssh进去配置后等待自动错误停止编译，
+4-此时就会有config文件生成了
+5-将生成的config文件覆盖到原config里
+6-再次不进入ssh编译
