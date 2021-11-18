@@ -13,9 +13,15 @@ The runner has received a shutdown signal. This can happen when the runner servi
 
 
 ssh进去配置app会被取消而且没有config文件生成；
+
 1-可以找一个错误代码添加到diy1里面，
+
 2-并在config里选中改错误插件，
+
 3-ssh进去配置后等待自动错误停止编译，
+
 4-此时就会有config文件生成了
+
 5-将生成的config文件覆盖到原config里
+
 6-再次不进入ssh编译
