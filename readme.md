@@ -12,7 +12,7 @@ The runner has received a shutdown signal. This can happen when the runner servi
 出现这样情况很有可能是连接SSH进去配置过固件的原因，如果有这情况出现，停了编译后也会有一份配置文件的，你下载配置文件，然后把内容覆盖到你编译的对应源码的.config里面，不要进SSH再次编译试试
 
 
-ssh进去配置app会被取消而且没有config文件生成；
+ssh进去配置app会被取消而且没有config文件生成，解决方法如下
 
 1-可以找一个错误代码添加到diy1里面，
 
