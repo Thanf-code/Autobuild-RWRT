@@ -14,7 +14,7 @@ The runner has received a shutdown signal. This can happen when the runner servi
 
 ssh进去配置app会被取消而且没有config文件生成，解决方法如下
 
-1-可以找一个错误代码添加到diy1里面，
+1-可以找一个错误代码（比如没有依赖的插件）添加到diy-part1里面，
 
 2-并在config里选中改错误插件，
 
