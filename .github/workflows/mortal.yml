@@ -115,7 +115,7 @@ jobs:
     
         
     - name: Check space usage
-      #if: (!cancelled())
+      if: (!cancelled())
       run: df -hT
 
     - name: Upload bin directory
@@ -127,7 +127,7 @@ jobs:
 
     - name: Organize files
       id: organize
-      #if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
@@ -136,7 +136,7 @@ jobs:
     
     - name: Upload firmware directory
       uses: actions/upload-artifact@main
-      #if: steps.organize.outputs.status == 'success' && !cancelled()
+      if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: OpenWrt_mortal${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
@@ -161,7 +161,7 @@ jobs:
     
     - name: Generate release tag
       id: tag
-      #if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
