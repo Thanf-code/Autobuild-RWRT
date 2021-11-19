@@ -65,7 +65,6 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-        cd openwrt
         ./scripts/feeds update -a > /dev/null 2>&1
         ./scripts/feeds install -a > /dev/null 2>&1
         [[ -e "$PATH1/$CONFIG_FILE" ]] && mv "$PATH1/$CONFIG_FILE" .config
