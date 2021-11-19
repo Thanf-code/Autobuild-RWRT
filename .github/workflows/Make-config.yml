@@ -57,7 +57,7 @@ jobs:
         cd $GITHUB_WORKSPACE/openwrt
         ./scripts/feeds update -a > /dev/null 2>&1
         echo "Home=${GITHUB_WORKSPACE}/openwrt" >> $GITHUB_ENV
-        echo "PATH1=${GITHUB_WORKSPACE}/openwrt/build/" >> $GITHUB_ENV
+        echo "PATH1=${GITHUB_WORKSPACE}/openwrt" >> $GITHUB_ENV
 
     - name: 加载源,补丁和自定义设置
       run: |
