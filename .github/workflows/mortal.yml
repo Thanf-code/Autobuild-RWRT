@@ -12,9 +12,9 @@ name: Build mortal
 
 env:
   REPO_URL: https://github.com/Thanf-code/immortalwrt
-  REPO_BRANCH: openwrt-21.02
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: configs/mortal/2102.config
+  CONFIG_FILE: configs/mortal/master.config
   DIY_P1_SH: diy-part1/mortal.sh
   DIY_P2_SH: diy-part2/mortal.sh
   UPLOAD_BIN_DIR: true
