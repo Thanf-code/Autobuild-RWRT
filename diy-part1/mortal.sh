@@ -19,3 +19,4 @@ sed -i '$a src-git small https://github.com/Thanf-code/small-package' feeds.conf
 #git clone https://github.com/Hyy2001X/luci-app-autoupdate.git package/luci-app-autoupdate
 #git clone https://github.com/Thanf-code/luci-app-control-weburl.git package/luci-app-control-weburl
 #git clone https://github.com/Thanf-code/luci-app-omcproxy.git package/luci-app-omcproxy
+git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
