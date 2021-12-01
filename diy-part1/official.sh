@@ -18,3 +18,5 @@ svn co https://github.com/Thanf-code/iptvhelper package/iptvhelper > /dev/null 2
 #git clone https://github.com/Hyy2001X/luci-app-autoupdate.git package/luci-app-autoupdate
 #git clone https://github.com/Thanf-code/luci-app-control-weburl.git package/luci-app-control-weburl
 #git clone https://github.com/mwarning/zerotier-openwrt.git package/zerotier
+git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
+git clone https://github.com/Thanf-code/luci-app-cpufreq.git package/luci-app-cpufreq
