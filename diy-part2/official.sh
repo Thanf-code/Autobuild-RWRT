@@ -17,6 +17,9 @@ sed -i 's/OpenWrt/R-Wrt/g' package/base-files/files/bin/config_generate
 # Modify default theme
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon_new/g' feeds/luci/collections/luci/Makefile
 
+# 换源
+sed -i 's,downloads.openwrt.org,mirrors.tencent.com/openwrt,g' /etc/opkg/distfeeds.conf
+
 #add upx and ucl
 mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
 mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
