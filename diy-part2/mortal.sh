@@ -26,8 +26,8 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/emortal/default-settings/files/
 # 换源
 sed -i 's,downloads.openwrt.org,mirrors.tencent.com/lede,g' /etc/opkg/distfeeds.conf
 
-# ramips机型,默认内核5.4，修改内核为5.10
-#sed -i 's/PATCHVER:=5.4/PATCHVER:=5.10/g' target/linux/ramips/Makefile
+# rockchip机型,默认内核5.4，修改内核为5.10
+sed -i 's/PATCHVER:=5.4/PATCHVER:=5.10/g' target/linux/rockchip/Makefile
 
 # Add kernel build user
 [ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
