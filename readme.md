@@ -1,4 +1,4 @@
-# OpenWrt firmware for Newifi D2
+# OpenWrt firmware for Newifi D2/H3C NX30PRO
 
 Auto build OpenWrt firmware for Newifi D2 via GitHub Actions
 
