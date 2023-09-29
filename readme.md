@@ -2,8 +2,10 @@
 
 Auto build OpenWrt firmware for Newifi D2 via GitHub Actions
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Thanf-code/Autobuild-Newifi_D2?style=for-the-badge&label=Download)](https://github.com/Thanf-code/Autobuild-Newifi_D2/releases/latest)
-
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Thanf-code/Autobuild-RWRT?style=for-the-badge&label=Download)](https://github.com/Thanf-code/
+Autobuild-RWRT/releases/NEWIFI3-D2)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Thanf-code/Autobuild-RWRT?style=for-the-badge&label=Download)](https://github.com/Thanf-code/
+Autobuild-RWRT/releases/H3C-NX30-PRO)
 
 最近启动编译后，运行至开始编译步骤莫名的自动停止编译的，这个是github的动作，因为云编译浪费资源厉害，所以github要出手，一般在日志或者Actions会出现类似如下语句
 
